@@ -7,7 +7,7 @@
 
 #### Conclusion
 
-- Dynamic programming approach to minimize MSE in buckets lead to a complexity of O(n^3.k)(n being number of fico_scores, k is the number of buckets).
+- Dynamic programming approach to minimize MSE in buckets lead to a complexity of O(n^3*k)(n being number of fico_scores, k is the number of buckets).
 - KMeans Clustering approach proved to be far more efficient and ran in O(n) complexity.
 - One other method that could be adopted is a mix of Greedy+Dynamic Programming approach. But it leads to complexity of O(n^2* k) as we have to precompute the subarray calculations before hand in a memoization array which in itself costs O(n^2), while the greedy algorithm will then semi-accurately give out best boundaries in a single pass costing O(n)
   
